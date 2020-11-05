@@ -3,6 +3,14 @@ package main
 import "fmt"
 
 func main() {
+	var metrics [8]string
+	metrics[0] = "rttPktTransmit"
+	metrics[1] = "rttPktLoss"
+
+	for i:=0;  i < len(metrics); i++ {
+		fmt.Println(i)
+	}
+
 	x := []int{
     48,96,86,68,
     57,82,63,70,
